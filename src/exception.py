@@ -24,11 +24,3 @@ class CustomException(Exception):
     
     def __str__(self):
         return self.error_message
-
-# Example usage
-if __name__ == "__main__":
-    try:
-        # Simulate an error for demonstration purposes
-        1 / 0
-    except Exception as e:
-        raise CustomException(e, sys)
